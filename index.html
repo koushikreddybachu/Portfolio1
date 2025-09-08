@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koushik Reddy - Frontend Developer</title>
+    <meta name="description" content="Frontend Developer & UI/UX Designer creating beautiful, functional digital experiences. Specialized in React, TypeScript, and modern web technologies.">
+    <meta name="author" content="Alex Johnson">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Alex Johnson - Frontend Developer Portfolio">
+    <meta property="og:description" content="Frontend Developer & UI/UX Designer creating beautiful, functional digital experiences. Specialized in React, TypeScript, and modern web technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lovable_dev">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="logo gradient-text">Portfolio</div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <button class="nav-link" data-target="home">Home</button>
+                    <button class="nav-link" data-target="about">About</button>
+                    <button class="nav-link" data-target="skills">Skills</button>
+                    <button class="nav-link" data-target="projects">Projects</button>
+                    <button class="nav-link" data-target="contact">Contact</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav hidden" id="mobileNav">
+                <div class="mobile-nav-links">
+                    <button class="mobile-nav-link" data-target="home">Home</button>
+                    <button class="mobile-nav-link" data-target="about">About</button>
+                    <button class="mobile-nav-link" data-target="skills">Skills</button>
+                    <button class="mobile-nav-link" data-target="projects">Projects</button>
+                    <button class="mobile-nav-link" data-target="contact">Contact</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Koushik Reddy</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Frontend Developer passionate about creating beautiful, 
+                        functional, and user-friendly digital experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-target="projects">View My Work</button>
+                        <button class="btn btn-outline" data-target="contact">Get In Touch</button>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-down-btn" data-target="about">
+                <i data-lucide="arrow-down"></i>
+            </button>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <p class="section-subtitle">
+                        Passionate frontend developer with 4+ years of experience creating digital experiences 
+                        that combine beautiful design with robust functionality.
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 class="about-heading">My Journey</h3>
+                        <p class="about-paragraph">
+                            I started my journey in web development with a passion for creating beautiful, 
+                            functional websites. Over the years, I've evolved from writing simple HTML/CSS 
+                            to building complex React applications that serve thousands of users.
+                        </p>
+                        <p class="about-paragraph">
+                            My approach combines technical expertise with design thinking, ensuring that 
+                            every project not only works flawlessly but also provides an exceptional user experience.
+                        </p>
+                        <div class="values">
+                            <span class="badge">Clean Code</span>
+                            <span class="badge">User Experience</span>
+                            <span class="badge">Innovation</span>
+                            <span class="badge">Collaboration</span>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <h3 class="about-heading">Experience</h3>
+                        <div class="experience-list">
+                            <div class="experience-item card-hover">
+                                <div class="experience-header">
+                                    <h4 class="experience-title">Senior Frontend Developer</h4>
+                                    <span class="experience-period">2022 - Present</span>
+                                </div>
+                                <p class="experience-company">Tech Solutions Inc.</p>
+                                <p class="experience-desc">Leading frontend development for enterprise applications, focusing on React and TypeScript.</p>
+                            </div>
+                            <div class="experience-item card-hover">
+                                <div class="experience-header">
+                                    <h4 class="experience-title">UI/UX Developer</h4>
+                                    <span class="experience-period">2020 - 2022</span>
+                                </div>
+                                <p class="experience-company">Creative Agency</p>
+                                <p class="experience-desc">Designed and developed user interfaces for various client projects with focus on user experience.</p>
+                            </div>
+                            <div class="experience-item card-hover">
+                                <div class="experience-header">
+                                    <h4 class="experience-title">Junior Developer</h4>
+                                    <span class="experience-period">2019 - 2020</span>
+                                </div>
+                                <p class="experience-company">StartupCo</p>
+                                <p class="experience-desc">Developed responsive web applications and learned modern frontend technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                    <p class="section-subtitle">
+                        A comprehensive set of technical skills and tools that I use to bring ideas to life.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category card-hover">
+                        <h3 class="skill-category-title">Frontend Technologies</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React/Next.js</span>
+                                    <span class="skill-percent">15%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML5 & CSS3</span>
+                                    <span class="skill-percent">98%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 98%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card-hover">
+                        <h3 class="skill-category-title">Styling & UI</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Tailwind CSS</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Styled Components</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Sass/SCSS</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category card-hover">
+                        <h3 class="skill-category-title">Tools & Workflow</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Webpack/Vite</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Jest/Testing Library</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Figma/Adobe XD</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technologies-card card-hover">
+                    <h3 class="technologies-title">Technologies I Work With</h3>
+                    <div class="technologies">
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">GraphQL</span>
+                        <span class="tech-badge">Redux</span>
+                        <span class="tech-badge">Framer Motion</span>
+                        <span class="tech-badge">Prisma</span>
+                        <span class="tech-badge">Supabase</span>
+                        <span class="tech-badge">Vercel</span>
+                        <span class="tech-badge">AWS</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Figma</span>
+                        <span class="tech-badge">Git</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">
+                        A showcase of my recent work, featuring web applications built with modern technologies and best practices.
+                    </p>
+                </div>
+
+                <div class="projects-content">
+                    <h3 class="projects-category-title">Featured Projects</h3>
+                    <div class="featured-projects">
+                        <div class="project-card card-hover">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="E-Commerce Platform" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">E-Commerce Platform</h4>
+                                <p class="project-description">A modern e-commerce platform built with React, TypeScript, and Stripe integration. Features include product catalog, shopping cart, and secure payment processing.</p>
+                                <div class="project-technologies">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">Stripe</span>
+                                    <span class="tech-tag">Node.js</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i data-lucide="external-link"></i>
+                                        Live Demo
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i data-lucide="github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card card-hover">
+                            <div class="project-image">
+                                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop" alt="Task Management App" loading="lazy">
+                            </div>
+                            <div class="project-content">
+                                <h4 class="project-title">Task Management App</h4>
+                                <p class="project-description">Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                                <div class="project-technologies">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">Prisma</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Socket.io</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i data-lucide="external-link"></i>
+                                        Live Demo
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i data-lucide="github"></i>
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="projects-category-title">Other Projects</h3>
+                    <div class="other-projects">
+                        <div class="project-card-small card-hover">
+                            <div class="project-image-small">
+                                <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=300&fit=crop" alt="Weather Dashboard" loading="lazy">
+                            </div>
+                            <div class="project-content-small">
+                                <h4 class="project-title-small">Weather Dashboard</h4>
+                                <p class="project-description-small">Beautiful weather dashboard with location-based forecasts, interactive charts, and customizable widgets.</p>
+                                <div class="project-technologies-small">
+                                    <span class="tech-tag-small">React</span>
+                                    <span class="tech-tag-small">D3.js</span>
+                                    <span class="tech-tag-small">Weather API</span>
+                                    <span class="tech-tag-small">+1</span>
+                                </div>
+                                <div class="project-links-small">
+                                    <a href="#" class="project-link-small">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                    <a href="#" class="project-link-small">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card-small card-hover">
+                            <div class="project-image-small">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Portfolio Website" loading="lazy">
+                            </div>
+                            <div class="project-content-small">
+                                <h4 class="project-title-small">Portfolio Website</h4>
+                                <p class="project-description-small">Responsive portfolio website showcasing modern design principles with smooth animations.</p>
+                                <div class="project-technologies-small">
+                                    <span class="tech-tag-small">React</span>
+                                    <span class="tech-tag-small">Framer Motion</span>
+                                    <span class="tech-tag-small">Tailwind</span>
+                                    <span class="tech-tag-small">+1</span>
+                                </div>
+                                <div class="project-links-small">
+                                    <a href="#" class="project-link-small">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                    <a href="#" class="project-link-small">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card-small card-hover">
+                            <div class="project-image-small">
+                                <img src="https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?w=400&h=300&fit=crop" alt="Social Media Dashboard" loading="lazy">
+                            </div>
+                            <div class="project-content-small">
+                                <h4 class="project-title-small">Social Media Dashboard</h4>
+                                <p class="project-description-small">Analytics dashboard for social media management with data visualization and scheduling.</p>
+                                <div class="project-technologies-small">
+                                    <span class="tech-tag-small">Next.js</span>
+                                    <span class="tech-tag-small">TypeScript</span>
+                                    <span class="tech-tag-small">Recharts</span>
+                                    <span class="tech-tag-small">+1</span>
+                                </div>
+                                <div class="project-links-small">
+                                    <a href="#" class="project-link-small">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                    <a href="#" class="project-link-small">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card-small card-hover">
+                            <div class="project-image-small">
+                                <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=400&h=300&fit=crop" alt="Learning Management System" loading="lazy">
+                            </div>
+                            <div class="project-content-small">
+                                <h4 class="project-title-small">Learning Management System</h4>
+                                <p class="project-description-small">Educational platform with course management, progress tracking, and video streaming.</p>
+                                <div class="project-technologies-small">
+                                    <span class="tech-tag-small">React</span>
+                                    <span class="tech-tag-small">Node.js</span>
+                                    <span class="tech-tag-small">MongoDB</span>
+                                    <span class="tech-tag-small">+1</span>
+                                </div>
+                                <div class="project-links-small">
+                                    <a href="#" class="project-link-small">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                    <a href="#" class="project-link-small">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <p class="section-subtitle">
+                        Have a project in mind or want to collaborate? I'd love to hear from you. 
+                        Let's create something amazing together!
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-form-container card-hover">
+                        <h3 class="contact-form-title">Send Me a Message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project or idea..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-info-card card-hover">
+                            <h3 class="contact-info-title">Contact Information</h3>
+                            <div class="contact-info-items">
+                                <a href="mailto:alex.johnson@email.com" class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i data-lucide="mail"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h4 class="contact-info-label">Email</h4>
+                                        <p class="contact-info-value">alex.johnson@email.com</p>
+                                    </div>
+                                </a>
+                                <a href="tel:+15551234567" class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i data-lucide="phone"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h4 class="contact-info-label">Phone</h4>
+                                        <p class="contact-info-value">+1 (555) 123-4567</p>
+                                    </div>
+                                </a>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i data-lucide="map-pin"></i>
+                                    </div>
+                                    <div class="contact-info-content">
+                                        <h4 class="contact-info-label">Location</h4>
+                                        <p class="contact-info-value">San Francisco, CA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-card card-hover">
+                            <h3 class="contact-social-title">Follow Me</h3>
+                            <div class="contact-social-links">
+                                <a href="https://github.com" class="contact-social-link" aria-label="GitHub">
+                                    <i data-lucide="github"></i>
+                                </a>
+                                <a href="https://linkedin.com" class="contact-social-link" aria-label="LinkedIn">
+                                    <i data-lucide="linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com" class="contact-social-link" aria-label="Twitter">
+                                    <i data-lucide="twitter"></i>
+                                </a>
+                            </div>
+                            <div class="availability-notice">
+                                <p><strong>Available for freelance work!</strong> Currently accepting new projects 
+                                and collaborations. Response time is usually within 24 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo gradient-text">Portfolio</h3>
+                    <p class="footer-tagline">Creating digital experiences with passion and precision.</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com" class="footer-social-link" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com" class="footer-social-link" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:alex.johnson@email.com" class="footer-social-link" aria-label="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-back-to-top">
+                    <button class="back-to-top-btn" id="backToTopBtn">
+                        Back to top ↑
+                    </button>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © <span id="currentYear"></span> Alex Johnson. Made with 
+                    <i data-lucide="heart" class="heart-icon"></i> and lots of coffee.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast hidden" id="toast">
+        <div class="toast-content">
+            <div class="toast-icon">
+                <i data-lucide="check-circle"></i>
+            </div>
+            <div class="toast-message">
+                <h4 class="toast-title">Message Sent!</h4>
+                <p class="toast-text">Thank you for your message. I'll get back to you soon!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
